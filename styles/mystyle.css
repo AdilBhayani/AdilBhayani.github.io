@@ -7,7 +7,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #532A78;
+  background-color: #111111;
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,10 +24,10 @@ ul li a {
   text-decoration: none;
 }
 ul li a:hover:not(.active) {
-  background-color: #8849AD;
+  background-color: #666666;
 }
 ul li a.active {
-  background-color: #111111;
+  background-color: #b30000;
 }
 ul li.icon {
   display: none;
@@ -48,8 +48,9 @@ code {
 }
 #footerBox {
   text-align: center;
-  font-size: 11px;
-  background-color: #e6e6e6;
+  color: white;
+  font-size: 12px;
+  background-color: #111111;
   margin: 0px auto;
   width: 100%;
 }
