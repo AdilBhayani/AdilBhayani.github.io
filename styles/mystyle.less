@@ -1,0 +1,98 @@
+@basecolour: #532A78;
+@accent: #8849AD;
+@highlight: #111111;
+@background-grey: #e6e6e6;
+@code-grey: #eff0f1;
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: @basecolour;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+    background-color: @accent;;
+}
+
+ul li a.active {
+    background-color: @highlight;
+}
+
+ul li.icon {display: none;}
+
+code {
+    background-color: @code-grey;
+}
+
+#wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    background-color: white;
+}
+
+.videoBox {
+    padding: 20px;
+    text-align: center;
+}
+
+#footerBox {
+    text-align: center;
+    font-size: 11px;
+    background-color: @background-grey;
+    margin: 0px auto;
+    width: 100%;
+}
+
+#headerBox {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1270px){
+    ul li:not(:first-child) {display: none;}
+    ul li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:1270px) {
+  ul.responsive {position: relative;}
+  ul.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
